@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div id="container">
+    <div id="circle">
+      <img src="images/icon-star.svg" alt="">
+    </div>
+
+    <h1>How did we do?</h1>
+
+    <p> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+    </p>
+    <div id="buttons-number">
+      <button id="btn1" onclick="changeColor(this.id)">1</button>
+      <button id="btn2" onclick="changeColor(this.id)">2</button>
+      <button id="btn3" onclick="changeColor(this.id)">3</button>
+      <button id="btn4" onclick="changeColor(this.id)">4</button>
+      <button id="btn5" onclick="changeColor(this.id)">5</button>
+    </div>
+
+    <button id="button-submit" onclick="showText()">SUBMIT</button>
+  </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div id="text">
+      <img class="thankyou-img" src="images/illustration-thank-you.svg" alt="">
+      <h2>You selected <!-- Add rating here --> out of 5</h2> 
+
+      <h3>Thank you!</h3>
+
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+
+    </div>
+</body>
+</html>
