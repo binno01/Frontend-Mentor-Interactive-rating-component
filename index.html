@@ -30,13 +30,15 @@
     <p> Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
     </p>
-    <div id="buttons-number">
-      <button id="btn1" onclick="changeColor(this.id)">1</button>
-      <button id="btn2" onclick="changeColor(this.id)">2</button>
-      <button id="btn3" onclick="changeColor(this.id)">3</button>
-      <button id="btn4" onclick="changeColor(this.id)">4</button>
-      <button id="btn5" onclick="changeColor(this.id)">5</button>
-    </div>
+
+  <div class="buttons-number">
+    <button class="btn" onclick="changeColor(this)">1</button>
+    <button class="btn" onclick="changeColor(this)">2</button>
+    <button class="btn" onclick="changeColor(this)">3</button>
+    <button class="btn" onclick="changeColor(this)">4</button>
+    <button class="btn" onclick="changeColor(this)">5</button>
+  </div>
+  
 
     <button id="button-submit" onclick="showText()">SUBMIT</button>
   </div>
@@ -46,10 +48,10 @@
 
     <div id="text">
       <img class="thankyou-img" src="images/illustration-thank-you.svg" alt="">
-      <h2>You selected <!-- Add rating here --> out of 5</h2> 
+      <h2 id="result"></h2> 
 
       <h3>Thank you!</h3>
-
+ 
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!

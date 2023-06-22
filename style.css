@@ -45,14 +45,22 @@ p {
     flex-direction: column;    
 }
 
-#buttons-number {
+.btn {
+    background-color:hsl(213, 19%, 24%);
+}
+
+.btn.orange {
+    background-color:hsl(25, 97%, 53%);
+}
+
+.buttons-number {
     display: grid;
     margin-top: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px;
 }
 
-#buttons-number button {
+.buttons-number button {
     border: 1px solid transparent;
     color:hsl(0, 0%, 100%);
     border-radius: 50%;
@@ -62,13 +70,13 @@ p {
     cursor: pointer;
 }
 
-#buttons-number button:hover {
+.buttons-number button:hover {
     background-color: hsl(217, 12%, 63%);
 }
 
-.button-active {
+/*.button-active {
     background-color: hsl(25, 97%, 53%) ;
-}
+}*/
 
 #button-submit {
     background-color:  hsl(25, 97%, 53%);

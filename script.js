@@ -3,15 +3,17 @@ function showText() {
     elementText.style.display = "flex";
     let elementContainer = document.getElementById("container");
     elementContainer.style.display = "none";
-}
+  }
 
-
-function changeColor(btnID) {
-    const element = document.getElementById(btnID);
-    element.style.backgroundColor = "hsl(25, 97%, 53%)";
-    if(document.getElementById("btn1").style.backgroundColor == "hsl(25, 97%, 53%)"){
-        document.getElementById("btn1").style.backgroundColor = "hsl(213, 19%, 24%)" 
-        console.log ()
+function changeColor(btn) {
+    let buttons = document.getElementsByClassName("btn");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("orange");
     }
-}
+    btn.classList.add("orange");
+   // console.log(btn.innerText)
+   let elementRes = document.getElementById("result");
+  elementRes.innerText = `You selected ${btn.innerText} out of 5`
+
+  }
 
